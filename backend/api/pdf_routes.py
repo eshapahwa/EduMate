@@ -95,3 +95,19 @@ async def pdf_status():
         "chunks_available": len(pdf_processor.chunks),
         "status": "active" if len(pdf_processor.chunks) > 0 else "no_pdf"
     }
+
+# In pdf_routes.py
+@pdf_router.post("/clear")
+async def clear_pdf():
+    """
+    Clear the currently loaded PDF.
+    
+    Returns:
+        Status message
+    """
+    pdf_processor.chunks = []
+    pdf_processor.document_vectors = None
+    return {
+        "message": "PDF data cleared",
+        "status": "success"
+    }

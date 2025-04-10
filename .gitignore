@@ -1,1 +1,4 @@
 frontend/node_modules
+backend/_pycache/*
+backend/core/_pycache/*
+backend/api/_pycache/*

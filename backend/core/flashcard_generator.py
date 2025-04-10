@@ -8,6 +8,6 @@ Generate {num_cards} flashcards for learning "{subject}". Format each card like:
 Q: [Short question]  
 A: [Concise answer]
 
-Keep them useful for spaced repetition and review. Avoid long explanations.
+Keep them useful for spaced repetition and review. Avoid long explanations, but each answer should be of 2 sentences
 """
     return ask_llm(prompt)
