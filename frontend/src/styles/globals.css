@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional fallback styles */
+html {
+  scroll-behavior: smooth;
+  background-color: #121212;
+}
